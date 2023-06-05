@@ -1,0 +1,279 @@
+header {
+    background-color: transparent;
+    padding: 20px; 
+    transition: background-color 0.3s; 
+    max-width: 100%;
+    
+    }
+    
+    header:hover {
+    background-color: #fff;
+    }
+    
+    .logo{
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        font-weight: 100;
+        font-size: 2em;
+        transition: color 0.3s;
+        min-width: 0; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        margin-right: 54px;
+        width: 50%;
+        text-decoration: none;
+        
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s; /* Thời gian chuyển đổi hiệu ứng */
+    }
+    
+    header:hover ul li a {
+        color: #000; /* Màu chữ cho ul li a khi hover là trắng */
+    }
+    header:hover .logo{
+        color: black;
+    }
+    header:hover #icon{
+        color: black;
+    }
+    header#icon2:hover {
+        color: #010409;
+    } 
+    #search{
+        margin-left: 30px;
+    } 
+    .content {
+        position: relative;
+        z-index: 1;
+      
+    }  
+    header {
+        position: relative; 
+        z-index: 1; 
+      }
+/* phần body */
+    .video {
+        position: relative; 
+      }
+    .video-container {
+        /* width: 500px; 
+        height: 300px;  */
+        margin-top: -88px;
+        position: relative;
+      }
+      
+      #bg-video {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; 
+      }
+      .title1{
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        font-size: xx-large;
+      }
+      .title {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+      }
+      .button1{
+        border-radius: 5px;
+        max-width: 400px;
+        width: 200px;
+        background-color: transparent;
+        color: white;
+        size: 100px;
+        border-color: white;
+      }
+      .title3 {
+        text-align: center; 
+        position: absolute; 
+        bottom: 20px;
+        left: 0; 
+        right: 0; 
+        margin: 0 auto; 
+      }
+      
+      .button1 {
+        display: block; 
+        margin-top: 20px;
+        display: block; 
+        margin-top: 20px;
+      }
+      .service{
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .SERVICES{
+        margin-top: -70px;
+      }
+/* phần hình service   */
+      .hinh1{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 100px;
+      }
+      .hinh2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 100px;
+      }
+      .hinh3{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 100px;
+        
+      }
+      .hinhanh1title2 {
+        margin-top: 20px;
+      }
+      .hinhanh1title{
+        font-weight: bold;
+      }
+      .hinhanh2title{
+        font-weight: bold;
+      }
+      .hinhanh3title{
+        font-weight: bold;
+      }
+      .hinhanh2title1{
+        font-size: 1.125rem;
+        letter-spacing: .025rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        display: block;
+        margin-top: 15px;
+        
+      }
+      .hinhanh1title1{
+        font-size: 1.125rem;
+        letter-spacing: .025rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        display: block;
+        margin-top: 15px;
+      }
+      .hinhanh3title1{
+        font-size: 1.125rem;
+        letter-spacing: .025rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        display: block;
+        margin-top: 15px;
+      }
+      .hinhanh2title2 a{
+        color: #000;
+      }
+      .hinhanh1title2 a{
+        color: #000;
+      }
+      .hinhanh3title2 a{
+        color: #000;
+      }
+      .hinhanh2title2{
+        margin-top: 20px;
+      }
+      .hinhanh3title2{
+        margin-top: 20px;
+      }
+      
+      
+      .gh{
+        margin-left: 20px;
+      }
+
+   
+      /* body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      html, body {
+        height: 100%; 
+      } */
+      .SERVICE{
+        padding-top: 20px;
+      }
+/* phần footer */
+      footer {
+        margin-top: 250px;
+        border-top:solid 1px gray ;
+        padding-bottom: 5px;
+        border-bottom:solid 1px gray ;
+        box-shadow: 0px 0px 10px 0px gray
+      }
+      .cot1footer{
+        margin-bottom: 25px;
+        line-height: 2rem;
+        font-weight: 500;
+        color: inherit;
+        text-transform: uppercase;
+        font-size: .5625rem;
+        letter-spacing: .125rem;
+      }
+      .cot2footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot3footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot4footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot5footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot6footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot7footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      .cot8footer{
+        margin-bottom: 15px;
+        font-size: smaller;
+      }
+      footer a{
+      color: #000;
+      }
