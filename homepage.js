@@ -1,5 +1,5 @@
 function DiscoverToCampaign(){
-    window.location.href = "menu/men ready to wear.php";
+    window.location.href = "menu/Men/men ready to wear.html";
   }
   // function homepage(){
   //   window.location.href = "homepage.php";
@@ -15,22 +15,25 @@ function DiscoverToCampaign(){
   var menuLink = document.querySelector(".Menu");
   var menuOptions = document.getElementById("menuOptions");
   var MYLV = document.getElementById("MYLV");
-  
+  var logoSpan = document.querySelector(".logo");
   // searchButton.addEventListener("click", function() {
   //  searchInput.classList.remove("hidden");
   // });
 
   
-  searchButton.addEventListener("click",function(){
-    if(isInputVisible){
-      searchInput.classList.add("hidden");
-      isInputVisible = false
-    }
-    else{
-      searchInput.classList.remove("hidden");
-      isInputVisible = true;
-    }
-  })
+  searchButton.addEventListener("click", function() {
+  if (isInputVisible) {
+    searchInput.classList.add("hidden");
+    isInputVisible = false;
+    logoSpan.classList.remove("hidden");
+  } else {
+    searchInput.classList.remove("hidden");
+    isInputVisible = true;
+    logoSpan.classList.add("hidden");
+  }
+});
+
+  
 
   
   
@@ -47,3 +50,6 @@ function DiscoverToCampaign(){
     lvTable.classList.toggle('hidden');
   }
   
+
+
+ 
