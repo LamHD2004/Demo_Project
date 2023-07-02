@@ -114,36 +114,47 @@
 
           <li id="search">
             <a href="test.html"><i class="fa-solid fa-magnifying-glass" id="icon2" style="color: #ffffff;"></i></a>
-            <button id="searchLV">Search</button>
-            <input type="text" id="searchInput" class="hidden">
-            <!-- <button class="searchbutton" type="submit">Search ?</button> -->
+            <li><a href="#" onclick="togglesearch()">Search</a>
+              <div id="searchTable" class="hidden">
+                <i class="fa-solid fa-magnifying-glass" id="icon3" style="color: black;"></i><input type="search" id="searchInput"  placeholder="Search for <<louis-vuitton-x-yayoi-kusama-for-men>>">
+                <button class="searching">Search</button>
+                
+              </div>
+            
+            </li>
+           
+            
           </li>
           <span class="logo">LOUIS VUITTON</span>
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#" onclick="toggleLVTable()">My LV</a>
+          <li><a href="#" class="nav-item1">Wishlist</a></li>
+          <li>
+            <a href="#" class="nav-item1" onclick="toggleLVTable()">My LV</a>
             <div id="lvTable" class="hidden">
 
               <form method="post">
                 <div class="form-group">
-                  <p><span class="text">IDENTIFICATION</span></p>
-                  <p><span class="text">I ALREADY HAVE AN ACCOUNT</span></p>
-                  <label for="Login">Login*</label>
-                  <input type="text" class="form-control" id="username" name="username">
-                  <label for="Login">Password*</label>
-                  <input type="password" class="form-control" id="password" name="password">
-                  <a href="#">Forgot your password?</a>
-                  <button class="form-control" id="Signin" value="login" name="login">Sign in</button>
-                  <div class="bottom">
-                    <p><span class="text">I DON'T HAVE AN ACCOUNT</span></p>
-                    <p><span class="text">Enjoy added benefits and a richer experience by creating a personal
-                        account</span></p>
-                    <a href="#" class="form-control" id="register" style="text-align: center;">Create MY LV Account Now
-                      !</a>
-
+                  <div class="container">
+                    <form method="post">
+                      <div class="form-group">
+                        <h5><p><span class="text">IDENTIFICATION</span></p></h5>
+                        <p><span class="text">I ALREADY HAVE AN ACCOUNT</span></p>
+                        <label for="Login">Login*</label>
+                        <input type="text" class="form-control dodai" id="username" name="username" style="height: 50px;">
+                        <label for="Login">Password*</label>
+                        <input type="password" class="form-control dodai" id="password" name="password" style="height: 50px;">
+                        <a href="#" style="text-decoration: underline;">Forgot your password?</a>
+                        <button class="form-control dodai" id="Signin" value="login" name="login" style="background-color: black; color: #f1f1f1;">Sign in</button>
+                        <div class="bottom">
+                          <p><span class="text">I DON'T HAVE AN ACCOUNT</span></p>
+                          <p><span class="p" style="white-space: nowrap;">Enjoy added benefits and a richer experience by creating a</span> personal account</p>
+      
+                          <button class="form-control dodai" style="background-color: black; color: #f1f1f1;">Create LV account now !</button>
+        
+                        </div>
+        
+                      </div>
+                    </form>
                   </div>
-
-                </div>
-              </form>
 
             </div>
           </li>
@@ -323,15 +334,14 @@
 </body>
 <script src="homepage.js">
   document.addEventListener("DOMContentLoaded", function () {
-    // make it as accordion for smaller screens
+  
     if (window.innerWidth < 992) {
 
-      // close all inner dropdowns when parent is closed
+   
       document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
         everydropdown.addEventListener('hidden.bs.dropdown', function () {
-          // after dropdown is hidden, then find all submenus
           this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
-            // hide every submenu as well
+           
             everysubmenu.style.display = 'none';
           });
         })
@@ -341,7 +351,6 @@
         element.addEventListener('click', function (e) {
           let nextEl = this.nextElementSibling;
           if (nextEl && nextEl.classList.contains('submenu')) {
-            // prevent opening link if link needs to open dropdown
             e.preventDefault();
             if (nextEl.style.display == 'block') {
               nextEl.style.display = 'none';
@@ -353,7 +362,7 @@
         });
       })
     }
-    // end if innerWidth
+    
   });
 
 </script>

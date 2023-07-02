@@ -33,7 +33,7 @@
       color: #010813;
       transition: color 0.3s;
     }
-
+   
     header:hover .Menu {
       color: black;
     }
@@ -48,7 +48,7 @@
       position: relative;
       text-decoration: none;
       color: white;
-      margin-left: 5px;
+      margin-left: 0px;
       transition: color 0.3s;
     }
 
@@ -108,7 +108,7 @@
 
 
     #search {
-      margin-left: 5px;
+      margin-left: -23px;
       white-space: nowrap;
     }
 
@@ -330,7 +330,7 @@
     #searchInput {
       background-color: transparent;
       border-radius: 2px;
-      width: 1144px;
+      width: 200px;
     }
 
     .searchbutton {
@@ -361,14 +361,6 @@
       top: 65px;
     }
 
-    #lvTable {
-      position: absolute;
-      right: -23px;
-      background-color: white;
-      padding: 60px;
-      border: 1px solid black;
-      top: 65px;
-    }
 
     .text {
       box-sizing: border-box;
@@ -384,10 +376,67 @@
       text-align: center;
     }
 
+    /* thêm */
+    #searchTable{
+      background-color: white;
+    }
+    #lvTable {
+      position: absolute;
+      right: -20px;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+      top: 35px;
+    }
+    .p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    .forgot{
+      text-decoration: underline;
+    }
+    .dodai{
+    width: 400px;
     
-
-
-
+    }
+    
+    
+    
+    #searchTable {
+      position: absolute;
+      
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+      left: 430px;
+      
+    }
+    #searchInput{
+      width: 500px;
+      background-color: #f6f5f3;
+      padding: 0 1rem 0 2.75rem;
+    }
+    #icon3{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 0 1rem;
+    }
+    .searching{
+      background-color: #f6f5f3;
+      color: black;
+      border: none;
+    }
+    .searching:hover{
+      background-color: black;
+      color: white;
+      border: none;
+    }
 
 
 

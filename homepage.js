@@ -10,7 +10,7 @@ function DiscoverToCampaign(){
 // }
 
   var searchButton = document.getElementById("searchLV");
-  var searchInput = document.getElementById("searchInput");
+  
   var isInputVisible = false
   var menuLink = document.querySelector(".Menu");
   var menuOptions = document.getElementById("menuOptions");
@@ -52,4 +52,16 @@ function DiscoverToCampaign(){
   
 
 
- 
+//  thêm 
+function togglesearch() {
+  var searchTable = document.getElementById("searchTable");
+  var logo = document.querySelector(".logo");
+  var navItems = document.querySelectorAll(".nav-item1");
+  
+  searchTable.classList.toggle("hidden");
+  logo.classList.toggle("hidden");
+  
+  navItems.forEach(function(navItem) {
+    navItem.classList.toggle("hidden");
+  });
+}
